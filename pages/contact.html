@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="menu">
+                    <a href="store.html">Liquor Store</a>
+                    <ul>
+                        <li><a href="#">Ordinary Drink</a></li>
+                        <li><a href="#">Coctail</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="contactContainer">
+            <div class="contactBanner">
+                <h2>Contact us for more information</h2>
+                <div class="contactBannerContent">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quos unde architecto itaque dolore id numquam velit illo nulla minima inventore,
+                        non error molestiae tempore a eius. Soluta earum et veniam!
+                    </p>
+                </div>
+            </div>
+
+            <form class="contactForm" method="POST" enctype="application/x-www-form-urlencoded">
+                <div class="inputWrapper">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="inputWrapper">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="inputWrapper">
+                    <label for="genre">Genre:</label>
+                    <select type="select" name="genre" id="genre">
+                        <option name="genre" value="">- Chose -</option>
+                        <option name="genre" value="masculino">Masculino</option>
+                        <option name="genre" value="femenimo">Femenino</option>
+                    </select>
+                </div>
+                <div class="inputWrapper">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="inputWrapper">
+                    <label for="notificar">I accept being notified on any kind of promotions:</label>
+                    <input type="checkbox" name="notificar" id="notificar">
+                </div>
+                <div class="inputWrapperAction">
+                    <button type="reset">Clear fields</button>
+                    <button type="submit">Send Email</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <section>
+            <div class="sectionItem">
+                <h4>CONTACT</h4>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="sectionItem">
+                <h4>SCHEDULE</h4>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="sectionItem">
+                <h4>SOCIAL NETWORK</h4>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+        </section>
+    </footer>
+</body>
+
+</html>
