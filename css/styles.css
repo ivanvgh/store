@@ -71,11 +71,16 @@
 
 footer {
   width: 100%;
-  height: 100px;
-  background-color: gray;
+  height: 200px;
+  background-color: black;
   position: absolute;
   bottom: 0;
-  display: flex; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer .footer__item {
+    color: whitesmoke; }
 
 * {
   padding: 0;
@@ -86,7 +91,7 @@ footer {
 body {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   background-color: black;
   font-family: monospace; }
 
@@ -112,7 +117,7 @@ main {
   flex-direction: column; }
 
 .logo {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10px;
   width: 150px;

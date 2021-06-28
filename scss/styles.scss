@@ -15,7 +15,7 @@
 body {
     position: relative;
     min-height: 100vh;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     background-color: black;
     font-family: monospace;
 }
@@ -46,7 +46,7 @@ main{
 }
 
 .logo{
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
     width: 150px;
