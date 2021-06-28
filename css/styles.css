@@ -10,7 +10,7 @@
 
 .carousel-item {
   background-image: url(../images/banner_1.jpg);
-  min-height: 85vh;
+  min-height: 89vh;
   background-position: center;
   background-size: cover; }
 
@@ -22,53 +22,58 @@
 
 .storeNavbar {
   overflow: hidden;
-  background-color: #333; }
+  background-color: black;
+  opacity: 0.7; }
 
 .storeNavbar a {
-  float: left;
+  float: right;
   font-size: 16px;
-  color: white;
+  color: whitesmoke;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none; }
 
 .subnav {
-  float: left;
+  float: right;
   overflow: hidden; }
 
 .subnav .subnavbtn {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
-  padding: 14px 16px;
+  color: whitesmoke;
+  padding: 20px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0; }
 
 .storeNavbar a:hover,
 .subnav:hover .subnavbtn {
-  background-color: red; }
+  background-color: whitesmoke;
+  color: black; }
 
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: red;
+  background-color: whitesmoke;
   width: 100%;
-  z-index: 2; }
+  height: 10vh;
+  opacity: 0.7; }
 
 .subnav-content a {
-  float: left;
-  color: white;
+  color: black;
   text-decoration: none; }
 
 .subnav-content a:hover {
-  background-color: #eee;
-  color: black; }
+  color: black;
+  font-size: larger;
+  font-weight: 800; }
 
 .subnav:hover .subnav-content {
-  display: block; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 * {
   padding: 0;
@@ -79,15 +84,22 @@
 body {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 50px;
-  background-color: black; }
+  padding-bottom: 100px;
+  background-color: black;
+  font-family: monospace; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2; }
 
 footer {
   width: 100%;
-  height: 50px;
+  height: 100px;
   background-color: gray;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  display: flex; }
 
 main {
   width: 80%;
@@ -104,3 +116,10 @@ main {
 .pageContainer {
   display: flex;
   flex-direction: column; }
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  z-index: 3; }
