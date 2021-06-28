@@ -24,35 +24,36 @@
   overflow: hidden;
   background-color: black;
   opacity: 0.7; }
+  .storeNavbar a {
+    float: right;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none; }
+  .storeNavbar a:hover,
+  .storeNavbar .storeNavbar__subnav:hover .storeNavbar__subnav__btn {
+    background-color: whitesmoke;
+    color: black; }
 
-.storeNavbar a {
-  float: right;
-  font-size: 16px;
-  color: whitesmoke;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none; }
-
-.subnav {
+.storeNavbar__subnav {
   float: right;
   overflow: hidden; }
+  .storeNavbar__subnav .storeNavbar__subnav__btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; }
+  .storeNavbar__subnav:hover .storeNavbar__subnav__content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-.subnav .subnavbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: whitesmoke;
-  padding: 20px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0; }
-
-.storeNavbar a:hover,
-.subnav:hover .subnavbtn {
-  background-color: whitesmoke;
-  color: black; }
-
-.subnav-content {
+.storeNavbar__subnav__content {
   display: none;
   position: absolute;
   left: 0;
@@ -60,20 +61,21 @@
   width: 100%;
   height: 10vh;
   opacity: 0.7; }
+  .storeNavbar__subnav__content a {
+    color: black;
+    text-decoration: none; }
+  .storeNavbar__subnav__content a:hover {
+    color: black;
+    font-size: larger;
+    font-weight: 800; }
 
-.subnav-content a {
-  color: black;
-  text-decoration: none; }
-
-.subnav-content a:hover {
-  color: black;
-  font-size: larger;
-  font-weight: 800; }
-
-.subnav:hover .subnav-content {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  display: flex; }
 
 * {
   padding: 0;
@@ -92,14 +94,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 2; }
-
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: gray;
-  position: absolute;
-  bottom: 0;
-  display: flex; }
 
 main {
   width: 80%;

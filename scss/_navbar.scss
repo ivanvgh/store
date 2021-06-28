@@ -2,40 +2,42 @@
     overflow: hidden;
     background-color: black;
     opacity: 0.7;
+    a {
+        float: right;
+        font-size: 16px;
+        color: whitesmoke;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+    }
+    a:hover,
+    .storeNavbar__subnav:hover .storeNavbar__subnav__btn {
+        background-color: whitesmoke;
+        color: black;
+    }
 }
 
-.storeNavbar a {
-    float: right;
-    font-size: 16px;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-}
-
-.subnav {
+.storeNavbar__subnav {
     float: right;
     overflow: hidden;
+    .storeNavbar__subnav__btn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: whitesmoke;
+        padding: 20px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    &:hover .storeNavbar__subnav__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.subnav .subnavbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: whitesmoke;
-    padding: 20px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.storeNavbar a:hover,
-.subnav:hover .subnavbtn {
-    background-color: whitesmoke;
-    color: black;
-}
-
-.subnav-content {
+.storeNavbar__subnav__content {
     display: none;
     position: absolute;
     left: 0;
@@ -43,21 +45,13 @@
     width: 100%;
     height: 10vh;
     opacity: 0.7;
-}
-
-.subnav-content a {
-    color: black;
-    text-decoration: none;
-}
-
-.subnav-content a:hover {
-    color: black;
-    font-size: larger;
-    font-weight: 800;
-}
-
-.subnav:hover .subnav-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black;
+        font-size: larger;
+        font-weight: 800;
+    }
 }
