@@ -101,8 +101,31 @@ header {
   z-index: 2; }
 
 main {
-  width: 80%;
-  margin: 1rem 2rem; }
+  width: 100%;
+  background-color: whitesmoke; }
+  main section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+    main section h1 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+    main section .sectionItem {
+      display: flex;
+      flex-direction: row;
+      margin: 30px; }
+      main section .sectionItem .sectionItem__video {
+        width: 50%;
+        padding: 20px; }
+      main section .sectionItem .sectionItem__content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        main section .sectionItem .sectionItem__content h3 {
+          padding-bottom: 20px; }
 
 .directContact {
   height: 5vh;

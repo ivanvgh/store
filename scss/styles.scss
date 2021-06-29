@@ -27,9 +27,40 @@ header{
 }
 
 main{
-    width: 80%;
-    margin: $container-margin-y $container-margin-x;
+    width: 100%;
+    background-color: whitesmoke;
+    section {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .sectionItem{
+            display: flex;
+            flex-direction: row;
+            margin: 30px;
+            .sectionItem__video{
+                width: 50%;
+                padding: 20px;
+            }
+            .sectionItem__content{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                h3{
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
 }
+
+
 
 .directContact {
     height: 5vh;
