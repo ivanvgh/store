@@ -3,98 +3,105 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/site.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>LiquorStore</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navBar">
-
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li class="menu">
-                    <a href="store.html">Liquor Store</a>
-                    <ul>
-                        <li><a href="#">Ordinary Drink</a></li>
-                        <li><a href="#">Coctail</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-    <main>
-        <div class="contactContainer">
-            <div class="contactBanner">
-                <h2>Contact us for more information</h2>
-                <div class="contactBannerContent">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quos unde architecto itaque dolore id numquam velit illo nulla minima inventore,
-                        non error molestiae tempore a eius. Soluta earum et veniam!
-                    </p>
+    <img class="logo" src="../images/logo.png" alt="">
+    <div class="pageContainer">
+        <div class="directContact">
+            <img src="../images/wpp-icon.png" alt="whatsapp">Whatsapp 958-897-233 | Principal (01) 230-12-33 | 24/7
+            Available
+        </div>
+        <header>
+            <div class="storeNavbar">
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="#">Contact</a>
+                <div class="storeNavbar__subnav">
+                    <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store<i
+                            class="fa fa-caret-down"></i></button>
+                    <div class="storeNavbar__subnav__content">
+                        <a href="./pages/store-category.html">Ordinary Drink</a>
+                        <a href="./pages/store-category.html">Coctail</a>
+                        <a href="./pages/store-category.html">Milk / Float / Shake</a>
+                        <a href="./pages/store-category.html">Cocoa</a>
+                        <a href="./pages/store-category.html">Shot</a>
+                        <a href="./pages/store-category.html">Beer</a>
+                    </div>
                 </div>
             </div>
+        </header>
+        <main class="contact">
+            <div class="contact__container">
+                <h2>Contact us for more information</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos unde architecto itaque dolore id numquam velit illo nulla minima inventore,
+                    non error molestiae tempore a eius. Soluta earum et veniam!
+                </p>
 
-            <form class="contactForm" method="POST" enctype="application/x-www-form-urlencoded">
-                <div class="inputWrapper">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="inputWrapper">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="inputWrapper">
-                    <label for="genre">Genre:</label>
-                    <select type="select" name="genre" id="genre">
-                        <option name="genre" value="">- Chose -</option>
-                        <option name="genre" value="masculino">Masculino</option>
-                        <option name="genre" value="femenimo">Femenino</option>
-                    </select>
-                </div>
-                <div class="inputWrapper">
-                    <label for="comments">Comments:</label>
-                    <textarea name="comments" id="comments"></textarea>
-                </div>
-                <div class="inputWrapper">
-                    <label for="notificar">I accept being notified on any kind of promotions:</label>
-                    <input type="checkbox" name="notificar" id="notificar">
-                </div>
-                <div class="inputWrapperAction">
-                    <button type="reset">Clear fields</button>
-                    <button type="submit">Send Email</button>
-                </div>
-            </form>
-        </div>
+                <form method="POST" enctype="application/x-www-form-urlencoded">
+                    <div class="contact__form__input">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="contact__form__input">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="contact__form__input">
+                        <label for="genre">Genre:</label>
+                        <select type="select" name="genre" id="genre">
+                            <option name="genre" value="">- Chose -</option>
+                            <option name="genre" value="masculino">Masculino</option>
+                            <option name="genre" value="femenimo">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="contact__form__input">
+                        <label for="comments">Comments:</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+                    <div class="contact__form__input">
+                        <input type="checkbox" name="notificar" id="notificar">
+                        <label for="notificar">I accept being notified on any kind of promotions:</label>
+                    </div>
+                    <div class="contact__form__input__controls">
+                        <button type="reset">Clear fields</button>
+                        <button type="button">Send Email</button>
+                    </div>
+                </form>
+            </div>
 
-    </main>
-    <footer class="footer">
-        <section>
-            <div class="sectionItem">
+        </main>
+        <footer>
+            <div class="footer__item">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="footer__item">
                 <h4>CONTACT</h4>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
 
-            <div class="sectionItem">
+            <div class="footer__item">
                 <h4>SCHEDULE</h4>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
 
-            <div class="sectionItem">
+            <div class="footer__item">
                 <h4>SOCIAL NETWORK</h4>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-
-        </section>
-    </footer>
+        </footer>
+        <script src="../bootstrap/dist/js/bootstrap.js"></script>
+        <script>
+            function goToStore() {
+                window.location.href = "store.html"
+            }
+        </script>
 </body>
 
 </html>

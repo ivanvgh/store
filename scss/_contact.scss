@@ -1,0 +1,44 @@
+.contact{
+    min-height: 67vh;
+    background-image: url(../images/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    .contact__container{
+        width: 40vw;
+        padding: 90px;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.8;
+        background-color: black;
+        border: 1px solid whitesmoke;
+        border-radius: 0.5em;
+        color: whitesmoke;
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p{
+            text-align: justify;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            .contact__form__input{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            .contact__form__input__controls{
+                display: flex;
+                justify-content: flex-end;
+                button{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+

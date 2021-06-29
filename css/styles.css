@@ -171,3 +171,39 @@ iframe {
       text-align: center; }
     .aboutSection article table td {
       text-align: center; }
+
+.contact {
+  min-height: 67vh;
+  background-image: url(../images/contact-bg.jpg);
+  background-position: center;
+  background-size: cover; }
+  .contact .contact__container {
+    width: 40vw;
+    padding: 90px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5em;
+    color: whitesmoke; }
+    .contact .contact__container h2 {
+      text-align: center;
+      margin-bottom: 20px; }
+    .contact .contact__container p {
+      text-align: justify; }
+    .contact .contact__container form {
+      display: flex;
+      flex-direction: column; }
+      .contact .contact__container form .contact__form__input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px; }
+      .contact .contact__container form .contact__form__input__controls {
+        display: flex;
+        justify-content: flex-end; }
+        .contact .contact__container form .contact__form__input__controls button {
+          margin-left: 20px; }
