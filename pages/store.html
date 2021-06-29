@@ -3,123 +3,196 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Store</title>
-    <link rel="stylesheet" href="../css/site.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>LiquorStore</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navBar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li class="menu">
-                    <a href="store.html">Liquor Store</a>
-                    <ul>
-                        <li><a href="#">Ordinary Drink</a></li>
-                        <li><a href="#">Coctail</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="bannerImage">
-            <img src="../images/banner2.jpg" alt="Nuestros productos" title="Banner principal">
+    <img class="logo" src="../images/logo.png" alt="">
+    <div class="pageContainer">
+        <div class="directContact">
+            <img src="../images/wpp-icon.png" alt="whatsapp">Whatsapp 958-897-233 | Principal (01) 230-12-33 | 24/7
+            Available
         </div>
-        <div class="storeContainer">
-            <h2>Categories</h2>
-            <table class="storeMenu">
-                <tr>
-                    <td>
-                        <div class="storeMenuItem animate__animated animate__headShake">
-                            <div class="imgWrap">
-                                <img src="../images/coctail.png">
-                            </div>
-                            <h3>Ordinary Drink</h3>
-                            <a class="storeBtn" href="store-category.html">See more</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="storeMenuItem animate__animated animate__headShake">
-                            <div class="imgWrap">
-                                <img src="../images/coctail.png">
-                            </div>
-                            <h3>Cocktail</h3>
-                            <a class="storeBtn" href="store-category.html">See more</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="storeMenuItem animate__animated animate__headShake">
-                            <div class="imgWrap">
-                                <img src="../images/coctail.png">
-                            </div>
-                            <h3>Milk / Float / Shake</h3>
-                            <a class="storeBtn" href="store-category.html">See more</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="storeMenuItem animate__animated animate__headShake">
-                            <div class="imgWrap">
-                                <img src="../images/coctail.png">
-                            </div>
-                            <h3>Cocoa</h3>
-                            <a class="storeBtn" href="store-category.html">See more</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="storeMenuItem animate__animated animate__headShake">
-                            <div class="imgWrap">
-                                <img src="../images/coctail.png">
-                            </div>
-                            <h3>Shot</h3>
-                            <a class="storeBtn" href="store-category.html">See more</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="storeMenuItem animate__animated animate__headShake">
-                            <div class="imgWrap">
-                                <img src="../images/coctail.png">
-                            </div>
-                            <h3>Beer</h3>
-                            <a class="storeBtn" href="store-category.html">See more</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <header>
+            <div class="storeNavbar">
+                <a href="../index.html">Home</a>
+                <a href="#">About</a>
+                <a href="./contact.html">Contact</a>
+                <div class="storeNavbar__subnav">
+                    <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store<i
+                            class="fa fa-caret-down"></i></button>
+                    <div class="storeNavbar__subnav__content">
+                        <a href="./pages/store-category.html">Ordinary Drink</a>
+                        <a href="./pages/store-category.html">Coctail</a>
+                        <a href="./pages/store-category.html">Milk / Float / Shake</a>
+                        <a href="./pages/store-category.html">Cocoa</a>
+                        <a href="./pages/store-category.html">Shot</a>
+                        <a href="./pages/store-category.html">Beer</a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    </main>
-    <footer class="footer">
-        <section>
-            <div class="sectionItem">
+        <main>
+            <div class="storeContainer">
+                <h1>Categories</h1>
+
+                <div class="store__categoryItem store__categoryItem--reverse animate__animated animate__headShake">
+                    <img src="../images/ordinary_drink_category.jpg">
+                    <div class="store__categoryItem__description">
+                        <h3>Ordinary Drink</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.
+                        </p>
+                        <a class="storeBtn" href="store-category.html">See more</a>
+                    </div>
+                </div>
+                <div class="store__categoryItem animate__animated animate__headShake">
+                    <img src="../images/coctail_category.jpg">
+                    <div class="store__categoryItem__description">
+                        <h3>Cocktail</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.
+                        </p>
+                        <a class="storeBtn" href="store-category.html">See more</a>
+                    </div>
+                </div>
+                <div class="store__categoryItem store__categoryItem--reverse animate__animated animate__headShake">
+                    <img src="../images/milk_category.jpg">
+                    <div class="store__categoryItem__description">
+                        <h3>Milk \ Float \ Shake</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.
+                        </p>
+                        <a class="storeBtn" href="store-category.html">See more</a>
+                    </div>
+                </div>
+                <div class="store__categoryItem animate__animated animate__headShake">
+                    <img src="../images/cocoa_category.jpg">
+                    <div class="store__categoryItem__description">
+                        <h3>Cocoa</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.
+                        </p>
+                        <a class="storeBtn" href="store-category.html">See more</a>
+                    </div>
+                </div>
+                <div class="store__categoryItem store__categoryItem--reverse animate__animated animate__headShake">
+                    <img src="../images/shot_category.jpg">
+                    <div class="store__categoryItem__description">
+                        <h3>Shot</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.
+                        </p>
+                        <a class="storeBtn" href="store-category.html">See more</a>
+                    </div>
+                </div>
+                <div class="store__categoryItem animate__animated animate__headShake">
+                    <img src="../images/beer_category.jpg">
+                    <div class="store__categoryItem__description">
+                        <h3>Beer</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.
+                        </p>
+                        <a class="storeBtn" href="store-category.html">See more</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__item">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="footer__item">
                 <h4>CONTACT</h4>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
 
-            <div class="sectionItem">
+            <div class="footer__item">
                 <h4>SCHEDULE</h4>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
 
-            <div class="sectionItem">
+            <div class="footer__item">
                 <h4>SOCIAL NETWORK</h4>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-
-        </section>
-    </footer>
+        </footer>
+        <script src="../bootstrap/dist/js/bootstrap.js"></script>
+        <script>
+            function goToStore() {
+                window.location.href = "store.html"
+            }
+        </script>
 </body>
 
 </html>

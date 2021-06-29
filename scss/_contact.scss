@@ -36,6 +36,13 @@
                 justify-content: flex-end;
                 button{
                     margin-left: 20px;
+                    padding: 5px;
+                    border-radius: 0.5em;
+                    &:hover{
+                        background-color: black;
+                        color: whitesmoke;
+                        border: 2px solid whitesmoke;
+                    }
                 }
             }
         }

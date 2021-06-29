@@ -1,27 +1,30 @@
-iframe {
-    height: 88vh;
-}
 
-.aboutSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    article {
-        padding: 50px;
-        h2 {
-            text-align: center;
-            padding-bottom: 20px;
-        }
-        table {
-            img{
-                width: 70%;
-            }
-            p {
+.about{
+    iframe {
+        height: 88vh;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        article {
+            padding: 50px;
+            h2 {
                 text-align: center;
+                padding-bottom: 20px;
             }
-            td{
-                text-align: center;
+            table {
+                img{
+                    width: 70%;
+                }
+                p {
+                    text-align: center;
+                }
+                td{
+                    text-align: center;
+                }
             }
         }
     }
 }
+

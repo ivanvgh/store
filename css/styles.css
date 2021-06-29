@@ -17,33 +17,6 @@ header {
   top: 0;
   z-index: 2; }
 
-main {
-  width: 100%;
-  background-color: whitesmoke; }
-  main section {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column; }
-    main section h1 {
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 50px; }
-    main section .sectionItem {
-      display: flex;
-      flex-direction: row;
-      margin: 30px; }
-      main section .sectionItem .sectionItem__video {
-        width: 50%;
-        padding: 20px; }
-      main section .sectionItem .sectionItem__content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        padding: 20px; }
-        main section .sectionItem .sectionItem__content h3 {
-          padding-bottom: 20px; }
-
 .directContact {
   height: 5vh;
   background-color: black;
@@ -59,7 +32,7 @@ main {
 .logo {
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 20px;
   width: 150px;
   z-index: 3; }
 
@@ -153,23 +126,23 @@ footer {
   footer .footer__item {
     color: whitesmoke; }
 
-iframe {
+.about iframe {
   height: 88vh; }
 
-.aboutSection {
+.about section {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .aboutSection article {
+  .about section article {
     padding: 50px; }
-    .aboutSection article h2 {
+    .about section article h2 {
       text-align: center;
       padding-bottom: 20px; }
-    .aboutSection article table img {
+    .about section article table img {
       width: 70%; }
-    .aboutSection article table p {
+    .about section article table p {
       text-align: center; }
-    .aboutSection article table td {
+    .about section article table td {
       text-align: center; }
 
 .contact {
@@ -206,4 +179,88 @@ iframe {
         display: flex;
         justify-content: flex-end; }
         .contact .contact__container form .contact__form__input__controls button {
-          margin-left: 20px; }
+          margin-left: 20px;
+          padding: 5px;
+          border-radius: 0.5em; }
+          .contact .contact__container form .contact__form__input__controls button:hover {
+            background-color: black;
+            color: whitesmoke;
+            border: 2px solid whitesmoke; }
+
+.home {
+  width: 100%;
+  background-color: whitesmoke; }
+  .home section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+    .home section h1 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-weight: bold; }
+    .home section .sectionItem {
+      display: flex;
+      flex-direction: row;
+      margin: 30px; }
+      .home section .sectionItem .sectionItem__video {
+        width: 50%;
+        padding: 20px; }
+        .home section .sectionItem .sectionItem__video iframe {
+          height: 36vh; }
+      .home section .sectionItem .sectionItem__content {
+        width: 50%;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px; }
+        .home section .sectionItem .sectionItem__content h3 {
+          padding-bottom: 20px; }
+    .home section .sectionItem--reverse {
+      flex-direction: row-reverse; }
+
+.storeContainer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke; }
+  .storeContainer h1 {
+    font-weight: bold;
+    text-align: center; }
+  .storeContainer .store__categoryItem {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    border-radius: 0.5em; }
+    .storeContainer .store__categoryItem img {
+      width: 30vw; }
+  .storeContainer .store__categoryItem--reverse {
+    flex-direction: row-reverse;
+    background-color: whitesmoke;
+    color: black; }
+  .storeContainer .store__categoryItem__description {
+    padding: 50px;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center; }
+    .storeContainer .store__categoryItem__description h3 {
+      margin-bottom: 30px; }
+    .storeContainer .store__categoryItem__description a {
+      margin-top: 30px;
+      width: 30%;
+      text-decoration: none;
+      background-color: black;
+      color: whitesmoke;
+      border: 1px solid white;
+      border-radius: 0.5em;
+      padding: 10px; }
+      .storeContainer .store__categoryItem__description a:hover {
+        background-color: gray;
+        color: black;
+        font-weight: bold; }
