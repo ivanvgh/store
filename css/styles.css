@@ -126,24 +126,32 @@ footer {
   footer .footer__item {
     color: whitesmoke; }
 
-.about iframe {
-  height: 88vh; }
-
-.about section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .about section article {
-    padding: 50px; }
-    .about section article h2 {
-      text-align: center;
-      padding-bottom: 20px; }
-    .about section article table img {
-      width: 70%; }
-    .about section article table p {
-      text-align: center; }
-    .about section article table td {
-      text-align: center; }
+.about {
+  background-color: whitesmoke; }
+  .about iframe {
+    height: 88vh; }
+  .about section {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .about section article {
+      padding: 50px;
+      display: flex;
+      flex-direction: column; }
+      .about section article h2 {
+        text-align: center;
+        padding-bottom: 20px; }
+      .about section article table {
+        display: flex;
+        justify-content: center; }
+        .about section article table img {
+          width: 70%; }
+        .about section article table p {
+          text-align: center; }
+        .about section article table td {
+          text-align: center; }
 
 .contact {
   min-height: 67vh;
@@ -264,3 +272,42 @@ footer {
         background-color: gray;
         color: black;
         font-weight: bold; }
+
+.category {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; }
+  .category a {
+    text-decoration: none; }
+  .category h2 {
+    padding-bottom: 30px; }
+  .category .category__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .category .category__container .category__container__item {
+      width: 30vw;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .category .category__container .category__container__item img {
+        width: 30%; }
+      .category .category__container .category__container__item h3 {
+        padding: 10px; }
+      .category .category__container .category__container__item a {
+        background-color: black;
+        border: 1px solid black;
+        color: whitesmoke;
+        padding: 10px;
+        border-radius: .5em; }
+        .category .category__container .category__container__item a:hover {
+          background-color: white;
+          color: black;
+          font-weight: bold; }
+      .category .category__container .category__container__item:hover {
+        background-color: gray;
+        border-radius: 1.5em; }
