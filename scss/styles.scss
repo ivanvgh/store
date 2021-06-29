@@ -1,11 +1,4 @@
-@import "variables";
-@import "carousel";
-@import "navbar";
-@import "footer";
-@import "../bootstrap/dist/css/bootstrap.css";
-
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -20,13 +13,13 @@ body {
     font-family: monospace;
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 2;
 }
 
-main{
+main {
     width: 100%;
     background-color: whitesmoke;
     section {
@@ -39,28 +32,26 @@ main{
             margin-top: 50px;
             margin-bottom: 50px;
         }
-        .sectionItem{
+        .sectionItem {
             display: flex;
             flex-direction: row;
             margin: 30px;
-            .sectionItem__video{
+            .sectionItem__video {
                 width: 50%;
                 padding: 20px;
             }
-            .sectionItem__content{
+            .sectionItem__content {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
                 padding: 20px;
-                h3{
+                h3 {
                     padding-bottom: 20px;
                 }
             }
         }
     }
 }
-
-
 
 .directContact {
     height: 5vh;
@@ -76,10 +67,18 @@ main{
     flex-direction: column;
 }
 
-.logo{
+.logo {
     position: fixed;
     top: 10px;
     left: 10px;
     width: 150px;
     z-index: 3;
 }
+
+@import "variables";
+@import "carousel";
+@import "navbar";
+@import "footer";
+@import "about";
+
+@import "../bootstrap/dist/css/bootstrap.css";

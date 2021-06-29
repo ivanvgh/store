@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>LiquorStore</title>
 </head>
 
 <body>
@@ -17,18 +17,18 @@
         </div>
         <header>
             <div class="storeNavbar">
-                <a href="#home">Home</a>
-                <a href="#home">About</a>
-                <a href="#home">Contact</a>
+                <a href="#">Home</a>
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/contact.html">Contact</a>
                 <div class="storeNavbar__subnav">
-                    <button class="storeNavbar__subnav__btn">Store<i class="fa fa-caret-down"></i></button>
+                    <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store<i class="fa fa-caret-down"></i></button>
                     <div class="storeNavbar__subnav__content">
-                        <a href="#">Ordinary Drink</a>
-                        <a href="#">Coctail</a>
-                        <a href="#">Milk / Float / Shake</a>
-                        <a href="#">Cocoa</a>
-                        <a href="#">Shot</a>
-                        <a href="#">Beer</a>
+                        <a href="./pages/store-category.html">Ordinary Drink</a>
+                        <a href="./pages/store-category.html">Coctail</a>
+                        <a href="./pages/store-category.html">Milk / Float / Shake</a>
+                        <a href="./pages/store-category.html">Cocoa</a>
+                        <a href="./pages/store-category.html">Shot</a>
+                        <a href="./pages/store-category.html">Beer</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,12 @@
             </div>
         </footer>
     </div>
-    <script src="./bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        function goToStore(){
+            window.location.href = "pages/store.html"
+        }
+    </script>
 </body>
 
 </html>

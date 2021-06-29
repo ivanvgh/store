@@ -1,89 +1,4 @@
-/*
-    Layout constants.
-*/
-/*
-    Mixins.
-*/
 @import url(../bootstrap/dist/css/bootstrap.css);
-.carouselContainer {
-  position: relative; }
-
-.carousel-item {
-  background-image: url(../images/banner_1.jpg);
-  min-height: 89vh;
-  background-position: center;
-  background-size: cover; }
-
-.carousel__item--backgroud-img2 {
-  background-image: url(../images/banner_2.jpg); }
-
-.carousel__item--backgroud-img3 {
-  background-image: url(../images/banner_3.jpg); }
-
-.storeNavbar {
-  overflow: hidden;
-  background-color: black;
-  opacity: 0.7;
-  display: flex;
-  justify-content: flex-end; }
-  .storeNavbar a {
-    float: right;
-    font-size: 16px;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none; }
-  .storeNavbar a:hover,
-  .storeNavbar .storeNavbar__subnav:hover .storeNavbar__subnav__btn {
-    background-color: whitesmoke;
-    color: black; }
-
-.storeNavbar__subnav {
-  float: right;
-  overflow: hidden; }
-  .storeNavbar__subnav .storeNavbar__subnav__btn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: whitesmoke;
-    padding: 20px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0; }
-  .storeNavbar__subnav:hover .storeNavbar__subnav__content {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-
-.storeNavbar__subnav__content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: whitesmoke;
-  width: 100%;
-  height: 10vh;
-  opacity: 0.7; }
-  .storeNavbar__subnav__content a {
-    color: black;
-    text-decoration: none; }
-  .storeNavbar__subnav__content a:hover {
-    color: black;
-    font-size: larger;
-    font-weight: 800; }
-
-footer {
-  width: 100%;
-  height: 200px;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  footer .footer__item {
-    color: whitesmoke; }
-
 * {
   padding: 0;
   margin: 0;
@@ -147,3 +62,112 @@ main {
   left: 10px;
   width: 150px;
   z-index: 3; }
+
+/*
+    Layout constants.
+*/
+/*
+    Mixins.
+*/
+.carouselContainer {
+  position: relative; }
+
+.carousel-item {
+  background-image: url(../images/banner_1.jpg);
+  min-height: 88vh;
+  background-position: center;
+  background-size: cover; }
+
+.carousel__item--backgroud-img2 {
+  background-image: url(../images/banner_2.jpg); }
+
+.carousel__item--backgroud-img3 {
+  background-image: url(../images/banner_3.jpg); }
+
+.storeNavbar {
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.7;
+  display: flex;
+  justify-content: flex-end; }
+  .storeNavbar a {
+    float: right;
+    font-size: 1.3em;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none; }
+  .storeNavbar a:hover,
+  .storeNavbar .storeNavbar__subnav:hover .storeNavbar__subnav__btn {
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid yellow; }
+
+.storeNavbar__subnav {
+  float: right;
+  overflow: hidden; }
+  .storeNavbar__subnav .storeNavbar__subnav__btn {
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    color: #faf3f3;
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; }
+  .storeNavbar__subnav:hover .storeNavbar__subnav__content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.storeNavbar__subnav__content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 10vh; }
+  .storeNavbar__subnav__content a {
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid white;
+    margin-left: 15px;
+    border-radius: 1.5em;
+    transition: padding 0.7s; }
+  .storeNavbar__subnav__content a:hover {
+    color: white;
+    font-weight: bold;
+    border: 3px solid yellow;
+    padding: 23px; }
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #0d1513;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer .footer__item {
+    color: whitesmoke; }
+
+iframe {
+  height: 88vh; }
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .aboutSection article {
+    padding: 50px; }
+    .aboutSection article h2 {
+      text-align: center;
+      padding-bottom: 20px; }
+    .aboutSection article table img {
+      width: 70%; }
+    .aboutSection article table p {
+      text-align: center; }
+    .aboutSection article table td {
+      text-align: center; }
