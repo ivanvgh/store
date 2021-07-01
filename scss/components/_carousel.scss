@@ -1,0 +1,11 @@
+.carousel-item{
+    min-height: 88vh;
+    background-position: center;
+    background-size: cover;
+}
+
+@each $item in 1,2,3 {
+    .carousel__item--backgroud-img#{$item}{
+        background-image: url(../images/banner_#{$item}.jpg);
+    }
+}

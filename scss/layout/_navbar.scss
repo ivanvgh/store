@@ -4,6 +4,7 @@
     opacity: 0.7;
     display: flex;
     justify-content: flex-end;
+
     a {
         float: right;
         font-size: 1.3em;
@@ -12,6 +13,7 @@
         padding: 20px 16px;
         text-decoration: none;
     }
+
     a:hover,
     .storeNavbar__subnav:hover .storeNavbar__subnav__btn {
         font-size: 1.4em;
@@ -23,6 +25,7 @@
 .storeNavbar__subnav {
     float: right;
     overflow: hidden;
+
     .storeNavbar__subnav__btn {
         font-size: 1.3em;
         border: none;
@@ -33,10 +36,9 @@
         font-family: inherit;
         margin: 0;
     }
+
     &:hover .storeNavbar__subnav__content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center);
     }
 }
 
@@ -47,6 +49,7 @@
     background-color: black;
     width: 100%;
     height: 10vh;
+
     a {
         color: whitesmoke;
         text-decoration: none;
@@ -55,6 +58,7 @@
         border-radius: 1.5em;
         transition: padding 0.7s;
     }
+
     a:hover {
         color: white;
         font-weight: bold;

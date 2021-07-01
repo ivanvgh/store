@@ -1,16 +1,14 @@
 .storeContainer {
+    @include flex(column, center);
     width: 60%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
     color: whitesmoke;
     h1{
         font-weight: bold;
         text-align: center;
     }
     .store__categoryItem {
-        display: flex;
-        flex-direction: row;
+        @include flex(row, center);
         padding:50px;
         border-radius: 0.5em;
         img{
@@ -23,11 +21,9 @@
         color: black;
     }
     .store__categoryItem__description{
+        @include flex(column, center);
         padding: 50px;
-        display: flex;
         text-align: justify;
-        flex-direction: column;
-        justify-content: center;
         h3{
             margin-bottom: 30px;
         }

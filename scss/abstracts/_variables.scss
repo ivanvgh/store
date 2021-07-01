@@ -1,0 +1,17 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color constants
+
+$white:    #fff !default;
+$black:    #000 !default;
+$yellow:   #ffc107 !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-margin-x: 2rem;
+$container-margin-y: 1rem;

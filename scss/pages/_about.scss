@@ -1,31 +1,37 @@
 .about {
     background-color: whitesmoke;
+
     iframe {
         height: 88vh;
     }
+
     section {
+        @include flex(column, center);
         width: 60%;
         margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
         article {
+            @include flex(column, center);
             padding: 50px;
-            display: flex;
-            flex-direction: column;
+
+            p {
+                text-align: justify;
+            }
+
             h2 {
                 text-align: center;
                 padding-bottom: 20px;
             }
+
             table {
-                display: flex;
-                justify-content: center;
                 img {
                     width: 70%;
                 }
+
                 p {
                     text-align: center;
                 }
+
                 td {
                     text-align: center;
                 }
