@@ -1,7 +1,7 @@
 
 .category {
     @include flex(column, center);
-    background-color: whitesmoke;
+    background-color: $whitesmoke;
     display: flex;
     padding: 50px;
     a {
@@ -24,19 +24,19 @@
                 padding: 10px;
             }
             a {
-                background-color: black;
-                border: 1px solid black;
-                color: whitesmoke;
+                background-color: $black;
+                border: 1px solid $black;
+                color: $whitesmoke;
                 padding: 10px;
                 border-radius: 0.5em;
                 &:hover {
-                    background-color: white;
-                    color: black;
+                    background-color: $white;
+                    color: $black;
                     font-weight: bold;
                 }
             }
             &:hover {
-                background-color: gray;
+                background-color: $gray;
                 border-radius: 1.5em;
             }
         }

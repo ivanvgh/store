@@ -2,7 +2,7 @@
     @include flex(column, center);
     width: 60%;
     margin: auto;
-    color: whitesmoke;
+    color: $whitesmoke;
     h1{
         font-weight: bold;
         text-align: center;
@@ -17,8 +17,8 @@
     }
     .store__categoryItem--reverse {
         flex-direction: row-reverse;
-        background-color: whitesmoke;
-        color: black;
+        background-color: $whitesmoke;
+        color: $black;
     }
     .store__categoryItem__description{
         @include flex(column, center);
@@ -31,14 +31,14 @@
             margin-top: 30px;
             width: 30%;
             text-decoration: none;
-            background-color: black;
-            color: whitesmoke;
-            border: 1px solid white;
+            background-color: $black;
+            color: $whitesmoke;
+            border: 1px solid $white;
             border-radius: 0.5em;
             padding: 10px;
             &:hover{
-                background-color: gray;
-                color: black;
+                background-color: $gray;
+                color: $black;
                 font-weight: bold;
             }
         }

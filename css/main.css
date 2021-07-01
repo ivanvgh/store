@@ -9,7 +9,7 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 200px;
-  background-color: black;
+  background-color: #000;
   font-family: monospace; }
 
 .pageContainer {
@@ -39,7 +39,7 @@ body {
 
 .storeNavbar {
   overflow: hidden;
-  background-color: black;
+  background-color: #000;
   opacity: 0.7;
   display: flex;
   justify-content: flex-end; }
@@ -54,7 +54,7 @@ body {
   .storeNavbar .storeNavbar__subnav:hover .storeNavbar__subnav__btn {
     font-size: 1.4em;
     font-weight: bold;
-    border-bottom: 1px solid yellow; }
+    border-bottom: 1px solid #ffc107; }
 
 .storeNavbar__subnav {
   float: right;
@@ -63,7 +63,7 @@ body {
     font-size: 1.3em;
     border: none;
     outline: none;
-    color: #faf3f3;
+    color: whitesmoke;
     padding: 20px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -78,20 +78,20 @@ body {
   display: none;
   position: absolute;
   left: 0;
-  background-color: black;
+  background-color: #000;
   width: 100%;
   height: 10vh; }
   .storeNavbar__subnav__content a {
     color: whitesmoke;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid #fff;
     margin-left: 15px;
     border-radius: 1.5em;
     transition: padding 0.7s; }
   .storeNavbar__subnav__content a:hover {
-    color: white;
+    color: #fff;
     font-weight: bold;
-    border: 3px solid yellow;
+    border: 3px solid #ffc107;
     padding: 23px; }
 
 header {
@@ -102,7 +102,7 @@ header {
 footer {
   width: 100%;
   height: 200px;
-  background-color: #0d1513;
+  background-color: #000;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -153,7 +153,7 @@ footer {
     margin-bottom: 50px;
     margin-top: 50px;
     opacity: 0.8;
-    background-color: black;
+    background-color: #000;
     border: 1px solid whitesmoke;
     border-radius: 0.5em;
     color: whitesmoke; }
@@ -174,13 +174,13 @@ footer {
         padding: 5px;
         border-radius: 0.5em; }
         .contact .contact__container form .contact__form__input__controls button:hover {
-          background-color: black;
+          background-color: #000;
           color: whitesmoke;
           border: 2px solid whitesmoke; }
 
 .directContact {
   height: 5vh;
-  background-color: black;
+  background-color: #000;
   color: whitesmoke;
   display: flex;
   justify-content: center;
@@ -244,7 +244,7 @@ footer {
   .storeContainer .store__categoryItem--reverse {
     flex-direction: row-reverse;
     background-color: whitesmoke;
-    color: black; }
+    color: #000; }
   .storeContainer .store__categoryItem__description {
     display: flex;
     justify-content: center;
@@ -258,14 +258,14 @@ footer {
       margin-top: 30px;
       width: 30%;
       text-decoration: none;
-      background-color: black;
+      background-color: #000;
       color: whitesmoke;
-      border: 1px solid white;
+      border: 1px solid #fff;
       border-radius: 0.5em;
       padding: 10px; }
       .storeContainer .store__categoryItem__description a:hover {
         background-color: gray;
-        color: black;
+        color: #000;
         font-weight: bold; }
 
 .category {
@@ -298,14 +298,14 @@ footer {
       .category .category__container .category__container__item h3 {
         padding: 10px; }
       .category .category__container .category__container__item a {
-        background-color: black;
-        border: 1px solid black;
+        background-color: #000;
+        border: 1px solid #000;
         color: whitesmoke;
         padding: 10px;
         border-radius: 0.5em; }
         .category .category__container .category__container__item a:hover {
-          background-color: white;
-          color: black;
+          background-color: #fff;
+          color: #000;
           font-weight: bold; }
       .category .category__container .category__container__item:hover {
         background-color: gray;

@@ -11,10 +11,10 @@
         margin-bottom: 50px;
         margin-top: 50px;
         opacity: 0.8;
-        background-color: black;
-        border: 1px solid whitesmoke;
+        background-color: $black;
+        border: 1px solid $whitesmoke;
         border-radius: 0.5em;
-        color: whitesmoke;
+        color: $whitesmoke;
 
         h2 {
             text-align: center;
@@ -43,9 +43,9 @@
                     border-radius: 0.5em;
 
                     &:hover {
-                        background-color: black;
-                        color: whitesmoke;
-                        border: 2px solid whitesmoke;
+                        background-color: $black;
+                        color: $whitesmoke;
+                        border: 2px solid $whitesmoke;
                     }
                 }
             }

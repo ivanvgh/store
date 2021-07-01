@@ -1,7 +1,7 @@
 .directContact {
     height: 5vh;
-    background-color: black;
-    color: whitesmoke;
+    background-color: $black;
+    color: $whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
 
 .home {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: $whitesmoke;
 
     section {
         width: 80%;
