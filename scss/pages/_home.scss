@@ -1,15 +1,30 @@
 .directContact {
     height: 5vh;
-    background-color: $black;
+    background-color: $black-ink;
     color: $whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center);
+
+    img {
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    i {
+        font-size: 20px;
+        &:hover{
+            color: green;
+        }
+    }
 }
 
 .home {
     width: 100%;
-    background-color: $whitesmoke;
+    background-color: $black;
+    color: $whitesmoke;
 
     section {
         width: 80%;
@@ -24,19 +39,24 @@
             font-weight: bold;
         }
 
+        h3{
+            text-align: center;
+            font-weight: 500;
+        }
+
         .sectionItem {
             @include flex(row, center);
             margin: 30px;
 
-            .sectionItem__video {
+            &__video {
                 width: 50%;
                 padding: 20px;
-                iframe{
-                    height: 36vh;;
+                iframe {
+                    height: 36vh;
                 }
             }
 
-            .sectionItem__content {
+            &__content {
                 width: 50%;
                 padding-left: 30px;
                 padding-right: 30px;
@@ -47,10 +67,24 @@
                     padding-bottom: 20px;
                 }
             }
+
+            &--reverse {
+                flex-direction: row-reverse;
+                background-color: $whitesmoke;
+                border: 1px solid $whitesmoke;
+                border-radius: .5em;
+                color: $black;
+            }
         }
 
-        .sectionItem--reverse{
-            flex-direction: row-reverse;
+
+    }
+}
+
+@each $social-network, $color in $social-network-and-color {
+    .#{$social-network}-icon {
+        &:hover {
+            color: $color;
         }
     }
 }

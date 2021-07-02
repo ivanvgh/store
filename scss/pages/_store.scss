@@ -1,46 +1,50 @@
-.storeContainer {
+.store {
     @include flex(column, center);
     width: 60%;
     margin: auto;
     color: $whitesmoke;
-    h1{
+    h1 {
         font-weight: bold;
         text-align: center;
     }
-    .store__categoryItem {
+    &__categoryItem {
         @include flex(row, center);
-        padding:50px;
+        padding: 50px;
         border-radius: 0.5em;
-        img{
+        img {
             width: 30vw;
         }
     }
-    .store__categoryItem--reverse {
+    &__categoryItem--reverse {
         flex-direction: row-reverse;
         background-color: $whitesmoke;
         color: $black;
     }
-    .store__categoryItem__description{
+    &__categoryItem__description {
         @include flex(column, center);
         padding: 50px;
         text-align: justify;
-        h3{
+
+        h3 {
             margin-bottom: 30px;
         }
-        a{
+
+        a {
             margin-top: 30px;
-            width: 30%;
             text-decoration: none;
             background-color: $black;
             color: $whitesmoke;
             border: 1px solid $white;
-            border-radius: 0.5em;
             padding: 10px;
-            &:hover{
+            &:hover {
                 background-color: $gray;
                 color: $black;
                 font-weight: bold;
             }
+        }
+
+        i {
+            margin: 0 10px;
         }
     }
 }

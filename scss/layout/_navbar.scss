@@ -1,6 +1,6 @@
 .storeNavbar {
     overflow: hidden;
-    background-color: $black;
+    background-color: $black-ink;
     opacity: 0.7;
     display: flex;
     justify-content: flex-end;
@@ -15,54 +15,54 @@
     }
 
     a:hover,
-    .storeNavbar__subnav:hover .storeNavbar__subnav__btn {
-        font-size: 1.4em;
-        font-weight: bold;
-        border-bottom: 1px solid $yellow;
-    }
-}
-
-.storeNavbar__subnav {
-    float: right;
-    overflow: hidden;
-
-    .storeNavbar__subnav__btn {
-        font-size: 1.3em;
-        border: none;
-        outline: none;
-        color: $whitesmoke;
-        padding: 20px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
+    &__subnav:hover &__subnav__btn {
+        color: $yellow;
+        transform: scale(1.3);
     }
 
-    &:hover .storeNavbar__subnav__content {
-        @include flex(row, center);
-    }
-}
+    &__subnav {
+        float: right;
+        overflow: hidden;
 
-.storeNavbar__subnav__content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: $black;
-    width: 100%;
-    height: 10vh;
+        &__btn {
+            font-size: 1.3em;
+            border: none;
+            outline: none;
+            color: $whitesmoke;
+            padding: 20px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
 
-    a {
-        color: $whitesmoke;
-        text-decoration: none;
-        border: 1px solid $white;
-        margin-left: 15px;
-        border-radius: 1.5em;
-        transition: padding 0.7s;
-    }
+        &:hover &__content {
+            @include flex(row, center);
+        }
 
-    a:hover {
-        color: $white;
-        font-weight: bold;
-        border: 3px solid $yellow;
-        padding: 23px;
+        &__content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: $black-ink;
+            width: 100%;
+            height: 10vh;
+
+            a {
+                color: $whitesmoke;
+                text-decoration: none;
+                border: 1px solid $white;
+                margin-left: 15px;
+                border-radius: 1.5em;
+                transition: padding 0.7s;
+            }
+
+            a:hover {
+                color: $white;
+                border: 2px solid $yellow;
+                font-weight: 800;
+                transform: scale(1.1);
+                background-color: $black-ink;
+            }
+        }
     }
 }

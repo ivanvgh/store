@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>LiquorStore</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>LiquorStore </title>
 </head>
 
 <body>
     <img class="logo" src="../images/logo.png" alt="">
     <div class="pageContainer">
         <div class="directContact">
-            <img src="../images/wpp-icon.png" alt="whatsapp">Whatsapp 958-897-233 | Principal (01) 230-12-33 | 24/7
-            Available
+            <a href="https://wa.me/1XXXXXXXXXX" target="_blank">
+                <i class="fa fa-whatsapp twitter-icon"></i> Whatsapp 958-897-233 | Principal (01) 230-12-33 | 24/7
+                Available
+            </a>
         </div>
         <header>
             <div class="storeNavbar">
@@ -23,7 +26,7 @@
                 <a href="#">About</a>
                 <a href="./contact.html">Contact</a>
                 <div class="storeNavbar__subnav">
-                    <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store<i
+                    <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i
                             class="fa fa-caret-down"></i></button>
                     <div class="storeNavbar__subnav__content">
                         <a href="./pages/store-category.html">Ordinary Drink</a>
@@ -38,7 +41,7 @@
         </header>
 
         <main>
-            <div class="storeContainer">
+            <div class="store">
                 <h1>Categories</h1>
 
                 <div class="store__categoryItem store__categoryItem--reverse animate__animated animate__headShake">
@@ -59,7 +62,7 @@
                             of
                             Lorem Ipsum.
                         </p>
-                        <a class="storeBtn" href="store-category.html">See more</a>
+                        <a href="store-category.html">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="store__categoryItem animate__animated animate__headShake">
@@ -80,7 +83,7 @@
                             of
                             Lorem Ipsum.
                         </p>
-                        <a class="storeBtn" href="store-category.html">See more</a>
+                        <a href="store-category.html">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="store__categoryItem store__categoryItem--reverse animate__animated animate__headShake">
@@ -101,7 +104,7 @@
                             of
                             Lorem Ipsum.
                         </p>
-                        <a class="storeBtn" href="store-category.html">See more</a>
+                        <a href="store-category.html">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="store__categoryItem animate__animated animate__headShake">
@@ -122,7 +125,7 @@
                             of
                             Lorem Ipsum.
                         </p>
-                        <a class="storeBtn" href="store-category.html">See more</a>
+                        <a href="store-category.html">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="store__categoryItem store__categoryItem--reverse animate__animated animate__headShake">
@@ -143,7 +146,7 @@
                             of
                             Lorem Ipsum.
                         </p>
-                        <a class="storeBtn" href="store-category.html">See more</a>
+                        <a href="store-category.html">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="store__categoryItem animate__animated animate__headShake">
@@ -164,36 +167,51 @@
                             of
                             Lorem Ipsum.
                         </p>
-                        <a class="storeBtn" href="store-category.html">See more</a>
+                        <a href="store-category.html">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <div class="footer__item">
-                <img src="./images/logo.png" alt="">
-            </div>
-            <div class="footer__item">
-                <h4>CONTACT</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container__item">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div class="footer__container__item">
+                    <h4>CONTACT</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="footer__container__item">
+                    <h4>SCHEDULE</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="footer__container__item">
+                    <h4>SOCIAL NETWORK</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="footer__container__item__icon">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook-square facebook-icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa fa-instagram instagram-icon"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa fa-twitter-square twitter-icon"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="footer__item">
-                <h4>SCHEDULE</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-
-            <div class="footer__item">
-                <h4>SOCIAL NETWORK</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
         </footer>
-        <script src="../bootstrap/dist/js/bootstrap.js"></script>
-        <script>
-            function goToStore() {
-                window.location.href = "store.html"
-            }
-        </script>
+    </div>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        function goToStore() {
+            window.location.href = "store.html";
+        }
+    </script>
 </body>
 
 </html>

@@ -5,11 +5,13 @@
 
 // Color constants
 
-$white:         #fff !default;
-$whitesmoke:    whitesmoke !default;
-$black:         #000 !default;
-$gray:          gray !default;
-$yellow:        #ffc107 !default;
+$white: #fff !default;
+$whitesmoke: whitesmoke !default;
+$black-ink: #000000 !default;
+$black: #0f0f0f !default;
+$gray: gray !default;
+$yellow: #ffc107 !default;
+$dark-gray: #1b1b1b;
 
 // Grid containers
 //
@@ -17,3 +19,9 @@ $yellow:        #ffc107 !default;
 
 $container-margin-x: 2rem;
 $container-margin-y: 1rem;
+
+$social-network-and-color: (
+    facebook: #1677f2,
+    twitter: #1ca1f2,
+    instagram: #d6249f,
+);

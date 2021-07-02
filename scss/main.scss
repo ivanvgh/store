@@ -1,4 +1,9 @@
 // Main styles.
+
+$carousel-control-color:             green;
+
+@import "../bootstrap/scss/bootstrap";
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
@@ -15,5 +20,4 @@
 @import "pages/home";
 @import "pages/store";
 @import "pages/storeCategory";
-
-@import "../bootstrap/dist/css/bootstrap.css";
+@import "pages/ingredients";

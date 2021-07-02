@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
 
-    .contact__container {
+    &__container {
         width: 40vw;
         padding: 90px;
         margin: auto;
@@ -12,7 +12,6 @@
         margin-top: 50px;
         opacity: 0.8;
         background-color: $black;
-        border: 1px solid $whitesmoke;
         border-radius: 0.5em;
         color: $whitesmoke;
 
@@ -24,16 +23,15 @@
         p {
             text-align: justify;
         }
+    }
 
-        form {
+    &__form {
+        &__input {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
 
-            .contact__form__input {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 20px;
-            }
-
-            .contact__form__input__controls {
+            &__controls {
                 display: flex;
                 justify-content: flex-end;
 

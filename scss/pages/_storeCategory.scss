@@ -1,7 +1,7 @@
 
 .category {
     @include flex(column, center);
-    background-color: $whitesmoke;
+    color: $whitesmoke;
     display: flex;
     padding: 50px;
     a {
@@ -10,10 +10,10 @@
     h2 {
         padding-bottom: 30px;
     }
-    .category__container {
+    &__container {
         @include flex(row, center);
         flex-wrap: wrap;
-        .category__container__item {
+        &__item {
             width: 30vw;
             padding: 20px;
             @include flex(column, center);
@@ -25,16 +25,20 @@
             }
             a {
                 background-color: $black;
-                border: 1px solid $black;
+                border: none;
                 color: $whitesmoke;
                 padding: 10px;
-                border-radius: 0.5em;
                 &:hover {
                     background-color: $white;
                     color: $black;
                     font-weight: bold;
                 }
             }
+
+            i{
+                margin:0 10px;
+            }
+
             &:hover {
                 background-color: $gray;
                 border-radius: 1.5em;

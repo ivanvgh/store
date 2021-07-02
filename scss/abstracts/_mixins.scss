@@ -4,3 +4,9 @@
     align-items: center;
     flex-direction: $orientation;
 }
+
+
+@mixin random($size){
+    width: random($size)+px;
+    width: random($size)+px;
+}
