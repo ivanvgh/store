@@ -4,25 +4,32 @@
     color: $whitesmoke;
     display: flex;
     padding: 50px;
+
     a {
         text-decoration: none;
     }
-    h2 {
+
+    h1 {
         padding-bottom: 30px;
     }
+
     &__container {
         @include flex(row, center);
         flex-wrap: wrap;
+
         &__item {
             width: 30vw;
             padding: 20px;
             @include flex(column, center);
+
             img {
                 width: 30%;
             }
-            h3 {
+
+            h2 {
                 padding: 10px;
             }
+
             a {
                 background-color: $black;
                 border: none;
