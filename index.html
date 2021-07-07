@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="VanQuor provides a large selection of the most popular liquor brands and cocktails with its most rated recipes.">
     <meta name="keywords"  content="LIQUOR, COCKTAILS, BRAND, POPULAR DRINKS, DRINKS, WISKEY, TEQUILA, MARTINI, BEER">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap"
@@ -26,19 +26,19 @@
         </div>
         <header>
             <div class="storeNavbar">
-                <a href="#" class="animate__pulse">Home</a>
-                <a href="./pages/about.html" class="animate__pulse">About</a>
-                <a href="./pages/contact.html" class="animate__pulse">Contact</a>
+                <a href="/" class="animate__pulse">Home</a>
+                <a href="./about" class="animate__pulse">About</a>
+                <a href="./contact" class="animate__pulse">Contact</a>
                 <div class="storeNavbar__subnav" class="animate__pulse">
                     <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i
                             class="fa fa-caret-down"></i></button>
                     <div class="storeNavbar__subnav__content">
-                        <a href="./pages/store-category.html" class="animate__animated animate__headShake">Ordinary Drink</a>
-                        <a href="./pages/store-category.html" class="animate__animated animate__headShake">Cocktail</a>
-                        <a href="./pages/store-category.html" class="animate__animated animate__headShake">Milk / Float / Shake</a>
-                        <a href="./pages/store-category.html" class="animate__animated animate__headShake">Cocoa</a>
-                        <a href="./pages/store-category.html" class="animate__animated animate__headShake">Shot</a>
-                        <a href="./pages/store-category.html" class="animate__animated animate__headShake">Beer</a>
+                        <a href="/store-category" class="animate__animated animate__headShake">Ordinary Drink</a>
+                        <a href="/store-category" class="animate__animated animate__headShake">Cocktail</a>
+                        <a href="/store-category" class="animate__animated animate__headShake">Milk / Float / Shake</a>
+                        <a href="/store-category" class="animate__animated animate__headShake">Cocoa</a>
+                        <a href="/store-category" class="animate__animated animate__headShake">Shot</a>
+                        <a href="/store-category" class="animate__animated animate__headShake">Beer</a>
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
     <script src="../bootstrap/dist/js/bootstrap.js"></script>
     <script>
         function goToStore() {
-            window.location.href = "pages/store.html";
+            window.location.href = "/store";
         }
     </script>
 </body>
