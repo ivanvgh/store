@@ -38,3 +38,28 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-tablet){
+    .about{
+        section {
+            @include flex(column, center);
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: $breakpoint-mobile){
+    .about{
+        section {
+            article{
+                table{
+                    tr{
+                        @include flex(column, center);
+                    }
+                }
+            }
+        }
+    }
+
+}

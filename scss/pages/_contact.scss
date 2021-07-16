@@ -5,8 +5,8 @@
     background-size: cover;
 
     &__container {
-        width: 40vw;
-        padding: 90px;
+        width: 60vw;
+        padding: 4em;
         margin: auto;
         margin-bottom: 50px;
         margin-top: 50px;
@@ -47,6 +47,24 @@
                     }
                 }
             }
+        }
+    }
+}
+
+
+@media (max-width: $breakpoint-tablet){
+    .contact {
+        &__container {
+            width: 100vw;
+            padding: 5em;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile){
+    .contact {
+        &__container {
+            padding: 2em;
         }
     }
 }
