@@ -30,6 +30,9 @@
                 <a href="/" class="animate__pulse">Home</a>
                 <a href="./about" class="animate__pulse">About</a>
                 <a href="./contact" class="animate__pulse">Contact</a>
+                <a href="#" onclick="handleClickHanburgerMenu()" class="storeNavbar__menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <div class="storeNavbar__subnav" class="animate__pulse">
                     <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i
                             class="fa fa-caret-down"></i></button>
@@ -95,7 +98,7 @@
         </div>
         <main class="home">
             <section>
-                <h1>That is what you will find!</h1>
+                <h1>This is what you will find!</h1>
                 <div class="sectionItem">
                     <div class="sectionItem__content">
                         <h2>Popular Liquor brands</h2>
@@ -154,7 +157,7 @@
         </main>
         <footer class="footer">
             <div class="footer__container">
-                <div class="footer__container__item">
+                <div class="footer__container__item footer__logo">
                     <img src="./images/logo.png" alt="VanQuor">
                 </div>
                 <div class="footer__container__item">
@@ -190,6 +193,16 @@
         function goToStore() {
             window.location.href = "/ecom";
         }
+
+        function handleClickHanburgerMenu() {
+            // var x = document.getElementById("myTopnav");
+            // if (x.className === "topnav") {
+            //     x.className += " responsive";
+            // } else {
+            //     x.className = "topnav";
+            // }
+        }
+
     </script>
 </body>
 

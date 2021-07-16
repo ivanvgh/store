@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    // transition:all 1s ease;
 }
 
 body {
@@ -40,3 +41,22 @@ header {
         display: none;
     }
 }
+
+@media (max-width: $breakpoint-tablet) {
+    .logo {
+        position: fixed;
+        width: 110px;
+        top: 10px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .logo {
+        position: fixed;
+        top: 0px;
+        left: 4px;
+        width: 80px;
+    }
+}
+
+

@@ -25,7 +25,7 @@
             border: none;
 
             i{
-                margin:0 10px;
+                margin:0 .8em;
             }
 
             &:hover{
@@ -41,3 +41,10 @@
         background-image: url(../images/banner_#{$item}.jpg);
     }
 }
+
+
+@media (min-width: $breakpoint-tablet) {
+
+}
+
+

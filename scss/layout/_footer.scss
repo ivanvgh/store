@@ -4,37 +4,61 @@
         height: 200px;
         background-color: $dark-gray;
         position: absolute;
-        bottom: 0;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        flex-wrap: wrap;
         padding-top: 2.5em;
 
         &__item {
             color: $whitesmoke;
 
             &__icon {
+                display: flex;
+                justify-content: flex-end;
                 font-size: 3em;
 
                 a {
                     color: inherit;
                     text-decoration: none;
+                    margin-left: 0.5em;
                 }
             }
-            .bar {
-                background-color: $whitesmoke;
-                height: 5px;
-            }
-            .boxes {
-                position: absolute;
-            }
         }
+        img {
+            width: 150px;
+        }
+    }
+    .footer__logo {
+        display: flex;
     }
 }
 
-@for $i from 1 through 100 {
-    .bar:nth-child(#{$i}) {
-        width: random(50) / 16 + vw;
+@media (max-width: $breakpoint-tablet) {
+    .footer {
+        font-size: 0.7rem;
+
+        &__container {
+            &__item {
+                @include flex(column, center);
+                margin: 20px;
+            }
+        }
+    }
+
+    .footer__logo {
+        display: none !important;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .footer {
+        &__container {
+            height: 450px;
+            @include flex(column, center);
+        }
+    }
+
+    .footer__logo {
+        display: none;
     }
 }

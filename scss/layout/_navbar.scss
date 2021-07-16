@@ -5,6 +5,10 @@
     display: flex;
     justify-content: flex-end;
 
+    &__menu {
+        display: none;
+    }
+
     a {
         float: right;
         font-size: 1.3em;
@@ -64,5 +68,33 @@
                 background-color: $black-ink;
             }
         }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .storeNavbar {
+        font-size: 0.8rem;
+        &__subnav {
+            &:hover &__content {
+                display: none;
+            }
+            button>i{
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .storeNavbar {
+        a, button{
+            display: none;
+        }
+
+        &__menu{
+            display: block !important;
+        }
+
     }
 }
