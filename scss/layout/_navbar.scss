@@ -78,23 +78,45 @@
             &:hover &__content {
                 display: none;
             }
-            button>i{
+            button > i {
                 display: none;
             }
         }
-
     }
 }
 
 @media (max-width: $breakpoint-mobile) {
     .storeNavbar {
-        a, button{
+        a,
+        button {
             display: none;
         }
 
-        &__menu{
+        &__menu {
             display: block !important;
         }
+    }
+    .storeNavbar.responsive {
+        position: relative;
+        display: flex;
+        flex-direction: column;
 
+        .storeNavbar__menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block !important;
+        }
+    }
+    .storeNavbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .storeNavbar.responsive a,
+    button {
+        float: none;
+        display: block;
+        text-align: center;
     }
 }

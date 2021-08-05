@@ -7648,10 +7648,29 @@ header h1, header .h1 {
       display: none; } }
 
 @media (max-width: 500px) {
-  .storeNavbar a, .storeNavbar button {
+  .storeNavbar a,
+  .storeNavbar button {
     display: none; }
   .storeNavbar__menu {
-    display: block !important; } }
+    display: block !important; }
+  .storeNavbar.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    .storeNavbar.responsive .storeNavbar__menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block !important; }
+  .storeNavbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .storeNavbar.responsive a,
+  button {
+    float: none;
+    display: block;
+    text-align: center; } }
 
 header {
   position: sticky;

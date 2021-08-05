@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VanQuor provides a large selection of the most popular liquor brands and cocktails with its most rated recipes.">
-    <meta name="keywords"  content="LIQUOR, COCKTAILS, BRAND, POPULAR DRINKS, DRINKS, WISKEY, TEQUILA, MARTINI, BEER">
+    <meta name="description"
+        content="VanQuor provides a large selection of the most popular liquor brands and cocktails with its most rated recipes.">
+    <meta name="keywords" content="LIQUOR, COCKTAILS, BRAND, POPULAR DRINKS, DRINKS, WISKEY, TEQUILA, MARTINI, BEER">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -24,10 +25,14 @@
             </a>
         </div>
         <header>
-            <div class="storeNavbar">
+            <div class="storeNavbar"  id="storeNavbar">
                 <a href="../">Home</a>
                 <a href="../about">About</a>
                 <a href="../contact">Contact</a>
+                <a href="../ecom" class="animate__pulse" id="storeLink" style="display: none;">Store</a>
+                <a href="#" onclick="handleClickHanburgerMenu()" class="storeNavbar__menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <div class="storeNavbar__subnav">
                     <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i
                             class="fa fa-caret-down"></i></button>
@@ -53,49 +58,49 @@
                 </div>
 
                 <div class="category__container__item animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg" alt="Item 2">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg" alt="Item 2">
                     <h2>Item 2</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="category__container__item  animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/sy7y6r1614775067.jpg" alt="Item 3">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/sy7y6r1614775067.jpg" alt="Item 3">
                     <h2>Item 3</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="category__container__item  animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg" alt="Item 4">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg" alt="Item 4">
                     <h2>Item 4</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="category__container__item  animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg" alt="Item 5">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg" alt="Item 5">
                     <h2>Item 5</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="category__container__item  animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg" alt="Item 6">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg" alt="Item 6">
                     <h2>Item 6</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="category__container__item  animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg" alt="Item 8">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg" alt="Item 8">
                     <h2>Item 7</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="category__container__item  animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg" alt="Item 8">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg" alt="Item 8">
                     <h2>Item 8</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="category__container__item  animate__animated animate__headShake">
-                        <img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" alt="Item 9">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" alt="Item 9">
                     <h2>Item 9</h2>
                     <a href="../store-ingredientes">Choose<i class="fa fa-caret-right" aria-hidden="true"></i></a>
                 </div>
@@ -139,6 +144,17 @@
     <script>
         function goToStore() {
             window.location.href = "../ecom";
+        }
+
+        function handleClickHanburgerMenu() {
+            var x = document.getElementById("storeNavbar");
+            if (x.className === "storeNavbar") {
+                x.className += " responsive";
+                document.getElementById("storeLink").style.display = '';
+            } else {
+                x.className = "storeNavbar";
+                document.getElementById("storeLink").style.display = 'none';
+            }
         }
     </script>
 </body>

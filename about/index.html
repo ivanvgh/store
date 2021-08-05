@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VanQuor provides a large selection of the most popular liquor brands and cocktails with its most rated recipes.">
-    <meta name="keywords"  content="LIQUOR, COCKTAILS, BRAND, POPULAR DRINKS, DRINKS, WISKEY, TEQUILA, MARTINI, BEER">
+    <meta name="description"
+        content="VanQuor provides a large selection of the most popular liquor brands and cocktails with its most rated recipes.">
+    <meta name="keywords" content="LIQUOR, COCKTAILS, BRAND, POPULAR DRINKS, DRINKS, WISKEY, TEQUILA, MARTINI, BEER">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -24,12 +25,17 @@
             </a>
         </div>
         <header>
-            <div class="storeNavbar">
+            <div class="storeNavbar" id="storeNavbar">
                 <a href="../">Home</a>
                 <a href="#">About</a>
                 <a href="../contact">Contact</a>
-                <div class="storeNavbar__subnav">
-                    <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i class="fa fa-caret-down"></i></button>
+                <a href="../ecom" class="animate__pulse" id="storeLink" style="display: none;">Store</a>
+                <a href="#" onclick="handleClickHanburgerMenu()" class="storeNavbar__menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="storeNavbar__subnav" class="animate__pulse">
+                    <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i
+                            class="fa fa-caret-down"></i></button>
                     <div class="storeNavbar__subnav__content">
                         <a href="../store-category">Ordinary Drink</a>
                         <a href="../store-category">Cocktail</a>
@@ -165,6 +171,17 @@
     <script>
         function goToStore() {
             window.location.href = "../ecom";
+        }
+
+        function handleClickHanburgerMenu() {
+            var x = document.getElementById("storeNavbar");
+            if (x.className === "storeNavbar") {
+                x.className += " responsive";
+                document.getElementById("storeLink").style.display = '';
+            } else {
+                x.className = "storeNavbar";
+                document.getElementById("storeLink").style.display = 'none';
+            }
         }
     </script>
 </body>

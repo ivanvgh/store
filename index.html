@@ -26,14 +26,15 @@
             </a>
         </div>
         <header>
-            <div class="storeNavbar">
+            <div class="storeNavbar" id="storeNavbar">
                 <a href="./" class="animate__pulse">Home</a>
                 <a href="./about" class="animate__pulse">About</a>
                 <a href="./contact" class="animate__pulse">Contact</a>
                 <a href="#" onclick="handleClickHanburgerMenu()" class="storeNavbar__menu" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-                <div class="storeNavbar__subnav" class="animate__pulse">
+                <a href="./ecom" class="animate__pulse" id="storeLink" style="display: none;">Store</a>
+                <div class="storeNavbar__subnav animate__pulse">
                     <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i
                             class="fa fa-caret-down"></i></button>
                     <div class="storeNavbar__subnav__content">
@@ -196,12 +197,14 @@
         }
 
         function handleClickHanburgerMenu() {
-            // var x = document.getElementById("myTopnav");
-            // if (x.className === "topnav") {
-            //     x.className += " responsive";
-            // } else {
-            //     x.className = "topnav";
-            // }
+            var x = document.getElementById("storeNavbar");
+            if (x.className === "storeNavbar") {
+                x.className += " responsive";
+                document.getElementById("storeLink").style.display='';
+            } else {
+                x.className = "storeNavbar";
+                document.getElementById("storeLink").style.display='none';
+            }
         }
 
     </script>

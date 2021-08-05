@@ -25,10 +25,14 @@
             </a>
         </div>
         <header>
-            <div class="storeNavbar">
+            <div class="storeNavbar" id="storeNavbar">
                 <a href="../">Home</a>
                 <a href="../about">About</a>
                 <a href="../contact">Contact</a>
+                <a href="../ecom" class="animate__pulse" id="storeLink" style="display: none;">Store</a>
+                <a href="#" onclick="handleClickHanburgerMenu()" class="storeNavbar__menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <div class="storeNavbar__subnav">
                     <button class="storeNavbar__subnav__btn" onclick="goToStore()">Store <i
                             class="fa fa-caret-down"></i></button>
@@ -45,28 +49,34 @@
         </header>
 
         <main class="ingredients">
-            <h1 class="ingredients__title"><a href="../ecom">Categories</a> > <a href="../store-category">Category item 1</a> > Drink</h1>
+            <h1 class="ingredients__title"><a href="../ecom">Categories</a> > <a href="../store-category">Category item
+                    1</a> > Drink</h1>
             <div class="ingredients__container">
                 <img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg" alt="drink 1">
                 <div class="ingredients__container__items">
                     <div class="ingredients__container__items__item">
-                        <img src="https://www.thecocktaildb.com/images/ingredients/Light%20rum-Medium.png" alt="drink-ingerdient-1">
+                        <img src="https://www.thecocktaildb.com/images/ingredients/Light%20rum-Medium.png"
+                            alt="drink-ingerdient-1">
                         <p>2-3 oz ligth rum</p>
                     </div>
                     <div class="ingredients__container__items__item">
-                        <img src="https://www.thecocktaildb.com/images/ingredients/Lime-Medium.png" alt="drink-ingerdient-2">
+                        <img src="https://www.thecocktaildb.com/images/ingredients/Lime-Medium.png"
+                            alt="drink-ingerdient-2">
                         <p>Juice of 1 Lime</p>
                     </div>
                     <div class="ingredients__container__items__item">
-                        <img src="https://www.thecocktaildb.com/images/ingredients/Sugar-Medium.png" alt="drink-ingerdient-3">
+                        <img src="https://www.thecocktaildb.com/images/ingredients/Sugar-Medium.png"
+                            alt="drink-ingerdient-3">
                         <p>Nombre del ingrediente</p>
                     </div>
                     <div class="ingredients__container__items__item">
-                        <img src="https://www.thecocktaildb.com/images/ingredients/Mint-Medium.png" alt="drink-ingerdient-4">
+                        <img src="https://www.thecocktaildb.com/images/ingredients/Mint-Medium.png"
+                            alt="drink-ingerdient-4">
                         <p>2-4 Mint</p>
                     </div>
                     <div class="ingredients__container__items__item">
-                        <img src="https://www.thecocktaildb.com/images/ingredients/Soda%20water-Medium.png" alt="drink-ingerdient-5">
+                        <img src="https://www.thecocktaildb.com/images/ingredients/Soda%20water-Medium.png"
+                            alt="drink-ingerdient-5">
                         <p>Soda water</p>
                     </div>
                 </div>
@@ -121,6 +131,17 @@
     <script>
         function goToStore() {
             window.location.href = "../ecom";
+        }
+
+        function handleClickHanburgerMenu() {
+            var x = document.getElementById("storeNavbar");
+            if (x.className === "storeNavbar") {
+                x.className += " responsive";
+                document.getElementById("storeLink").style.display = '';
+            } else {
+                x.className = "storeNavbar";
+                document.getElementById("storeLink").style.display = 'none';
+            }
         }
     </script>
 </body>
