@@ -1,6 +1,6 @@
 .store {
     @include flex(column, center);
-    width: 60%;
+    width: 70%;
     margin: auto;
     color: $whitesmoke;
     h1 {
@@ -47,6 +47,18 @@
         i {
             margin: 0 10px;
         }
+    }
+}
+
+@media (max-width: $breakpoint-laptop){
+    .store {
+        width: 90%;
+    }
+}
+
+@media (max-width: $breakpoint-laptop){
+    .store {
+        width: 90%;
     }
 }
 

@@ -1,4 +1,3 @@
-
 .category {
     @include flex(column, center);
     color: $whitesmoke;
@@ -23,7 +22,7 @@
             @include flex(column, center);
 
             img {
-                width: 30%;
+                width: 70%;
             }
 
             h2 {
@@ -42,13 +41,43 @@
                 }
             }
 
-            i{
-                margin:0 10px;
+            i {
+                margin: 0 10px;
             }
 
             &:hover {
                 background-color: $gray;
                 border-radius: 1.5em;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-laptop) {
+    .category {
+        padding: 20px;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .category__title{
+        display: none;
+    }
+    .category__container__item {
+        width: 40vw;
+        img {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .category {
+        padding: 5px;
+        &__container__item {
+            width: 80vw;
+            img {
+                width: 90%;
             }
         }
     }

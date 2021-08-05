@@ -7916,7 +7916,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   margin: auto;
   color: whitesmoke; }
   .store h1, .store .h1 {
@@ -7957,6 +7957,14 @@ header {
         font-weight: bold; }
     .store__categoryItem__description i {
       margin: 0 10px; }
+
+@media (max-width: 1200px) {
+  .store {
+    width: 90%; } }
+
+@media (max-width: 1200px) {
+  .store {
+    width: 90%; } }
 
 @media (max-width: 768px) {
   .store {
@@ -8009,7 +8017,7 @@ header {
       align-items: center;
       flex-direction: column; }
       .category__container__item img {
-        width: 30%; }
+        width: 70%; }
       .category__container__item h2, .category__container__item .h2 {
         padding: 10px; }
       .category__container__item a {
@@ -8026,6 +8034,26 @@ header {
       .category__container__item:hover {
         background-color: gray;
         border-radius: 1.5em; }
+
+@media (max-width: 1200px) {
+  .category {
+    padding: 20px; } }
+
+@media (max-width: 768px) {
+  .category__title {
+    display: none; }
+  .category__container__item {
+    width: 40vw; }
+    .category__container__item img {
+      width: 90%; } }
+
+@media (max-width: 500px) {
+  .category {
+    padding: 5px; }
+    .category__container__item {
+      width: 80vw; }
+      .category__container__item img {
+        width: 90%; } }
 
 .ingredients {
   display: flex;
@@ -8054,6 +8082,8 @@ header {
         padding: 18px; }
         .ingredients__container__items__item img {
           width: 10vw; }
+    .ingredients__container img {
+      width: 50%; }
   .ingredients__info {
     margin: 5vh 0;
     padding: 5vh;
@@ -8065,3 +8095,32 @@ header {
       margin-bottom: 3vh; }
     .ingredients__info p {
       text-align: justify; }
+
+@media (max-width: 1200px) {
+  .ingredients {
+    margin: 1vw 2vw; }
+    .ingredients__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .ingredients__container__items {
+        margin-top: 50px; }
+        .ingredients__container__items__item {
+          flex-basis: 50%; }
+          .ingredients__container__items__item img {
+            width: 30%; }
+      .ingredients__container img {
+        width: 70%; } }
+
+@media (max-width: 768px) {
+  .ingredients__title {
+    display: none; } }
+
+@media (max-width: 500px) {
+  .ingredients__title {
+    display: none; }
+  .ingredients__container {
+    margin-top: 50px; }
+    .ingredients__container__items__item {
+      flex-basis: 100%; } }
